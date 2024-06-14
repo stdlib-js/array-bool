@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-12)
+## Unreleased (2024-06-14)
 
 <section class="features">
 
 ### Features
 
+-   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376)
 -   [`d71d044`](https://github.com/stdlib-js/stdlib/commit/d71d04433120ab3096fb01c546d96c60c7684681) - add `sort` method to `array/bool` [(#2363)](https://github.com/stdlib-js/stdlib/pull/2363)
 -   [`40da309`](https://github.com/stdlib-js/stdlib/commit/40da3097c6ffaed4cd9284d6cdeff8bf11786553) - add `map` method to `array/bool` [(#2292)](https://github.com/stdlib-js/stdlib/pull/2292)
 -   [`5d53c2d`](https://github.com/stdlib-js/stdlib/commit/5d53c2de22e6899dc3970b4714c0c4e228562f92) - add initial TypeScript declarations
@@ -25,6 +26,7 @@
 
 <details>
 
+-   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - **feat:** add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376) _(by Jaysukh Makvana)_
 -   [`d71d044`](https://github.com/stdlib-js/stdlib/commit/d71d04433120ab3096fb01c546d96c60c7684681) - **feat:** add `sort` method to `array/bool` [(#2363)](https://github.com/stdlib-js/stdlib/pull/2363) _(by Jaysukh Makvana)_
 -   [`1b5abe6`](https://github.com/stdlib-js/stdlib/commit/1b5abe6cb97ca371aeeae5ef5e39e9ef20898e52) - **chore:** update package meta data [(#2344)](https://github.com/stdlib-js/stdlib/pull/2344) _(by stdlib-bot, Athan Reines)_
 -   [`40da309`](https://github.com/stdlib-js/stdlib/commit/40da3097c6ffaed4cd9284d6cdeff8bf11786553) - **feat:** add `map` method to `array/bool` [(#2292)](https://github.com/stdlib-js/stdlib/pull/2292) _(by Jaysukh Makvana, Athan Reines)_
