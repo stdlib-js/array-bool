@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-bool
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
+var BooleanArray = require( '@stdlib/array-bool' );
 ```
 
 <a name="constructor"></a>
@@ -98,7 +116,7 @@ var len = arr2.length;
 Creates a boolean array from a [typed array][@stdlib/array/typed].
 
 ```javascript
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+var Uint8Array = require( '@stdlib/array-uint8' );
 
 var buf = new Uint8Array( [ 1, 0, 0, 1 ] );
 // returns <Uint8Array>[ 1, 0, 0, 1 ]
@@ -134,7 +152,7 @@ len = arr2.length;
 Returns a boolean array view of an [`ArrayBuffer`][@stdlib/array/buffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 var buf = new ArrayBuffer( 240 );
 
 var arr1 = new BooleanArray( buf );
@@ -217,7 +235,7 @@ var nbytes = arr.byteLength;
 Offset (in bytes) of the array from the start of its underlying `ArrayBuffer`.
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 
 var arr = new BooleanArray( 10 );
 // returns <BooleanArray>
@@ -347,6 +365,110 @@ var arr = BooleanArray.of( true, false, false, true );
 
 var len = arr.length;
 // returns 4
+```
+
+<a name="method-find"></a>
+
+#### BooleanArray.prototype.find( predicate\[, thisArg] )
+
+Returns the first element in an array for which a predicate function returns a truthy value.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var v = arr.find( predicate );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v, i ) {
+    this.count += 1;
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( false, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var z = arr.find( predicate, context );
+// returns true
+
+var count = context.count;
+// returns 3
+```
+
+<a name="method-find-last"></a>
+
+#### Complex64Array.prototype.findLast( predicate\[, thisArg] )
+
+Returns the last element in an array for which a predicate function returns a truthy value.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var v = arr.findLast( predicate );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v, i ) {
+    this.count += 1;
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( false, 2 );
+
+var z = arr.findLast( predicate, context );
+// returns true
+
+var count = context.count;
+// returns 3
 ```
 
 <a name="method-get"></a>
@@ -576,15 +698,10 @@ The function should return a number where:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
-import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
+```javascript
+var Uint8Array = require( '@stdlib/array-uint8' );
+var logEach = require( '@stdlib/console-log-each' );
+var BooleanArray = require( '@stdlib/array-bool' );
 
 // Create a boolean array by specifying a length:
 var out = new BooleanArray( 3 );
@@ -606,10 +723,6 @@ out = new BooleanArray( arr.buffer, 1, 2 );
 logEach( '%s', out );
 
 console.log( '%s', false );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -641,7 +754,7 @@ console.log( '%s', false );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -704,9 +817,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-bool/main/LICENSE
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/esm
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/esm
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
 </section>
 
