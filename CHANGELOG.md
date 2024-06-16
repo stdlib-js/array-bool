@@ -27,6 +27,7 @@
 
 <details>
 
+-   [`a59c8bf`](https://github.com/stdlib-js/stdlib/commit/a59c8bfbfed0a5fad9a46625cfca6b869b03515e) - **docs:** add `repl.txt` to `array/bool` [(#2385)](https://github.com/stdlib-js/stdlib/pull/2385) _(by Jaysukh Makvana, Athan Reines)_
 -   [`5cd4a70`](https://github.com/stdlib-js/stdlib/commit/5cd4a70beaa7663d2a822b0922b3fb3cc6ec539f) - **feat:** add `findIndex` and `findLastIndex` methods to `array/bool` [(#2384)](https://github.com/stdlib-js/stdlib/pull/2384) _(by Jaysukh Makvana, Athan Reines)_
 -   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - **feat:** add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376) _(by Jaysukh Makvana)_
 -   [`d71d044`](https://github.com/stdlib-js/stdlib/commit/d71d04433120ab3096fb01c546d96c60c7684681) - **feat:** add `sort` method to `array/bool` [(#2363)](https://github.com/stdlib-js/stdlib/pull/2363) _(by Jaysukh Makvana)_
