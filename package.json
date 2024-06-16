@@ -61,6 +61,7 @@
     "@stdlib/assert-instance-of": "^0.2.1",
     "@stdlib/assert-is-boolean": "^0.2.1",
     "@stdlib/assert-is-booleanarray": "github:stdlib-js/assert-is-booleanarray#main",
+    "@stdlib/assert-is-integer": "^0.2.1",
     "@stdlib/console-log-each": "^0.2.1",
     "@stdlib/math-base-special-pow": "^0.2.1",
     "@stdlib/random-base-randu": "^0.2.1",
