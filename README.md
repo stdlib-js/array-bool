@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-bool
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-BooleanArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var BooleanArray = require( 'path/to/vendor/umd/array-bool/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.BooleanArray;
-})();
-</script>
+var BooleanArray = require( '@stdlib/array-bool' );
 ```
 
 <a name="constructor"></a>
@@ -403,7 +397,7 @@ The `predicate` function is provided three arguments:
 To set the function execution context, provide a `thisArg`.
 
 ```javascript
-function predicate( v, i ) {
+function predicate( v ) {
     this.count += 1;
     return ( v === true );
 }
@@ -420,6 +414,58 @@ arr.set( true, 2 );
 
 var z = arr.find( predicate, context );
 // returns true
+
+var count = context.count;
+// returns 3
+```
+
+<a name="method-find-index"></a>
+
+#### BooleanArray.prototype.findIndex( predicate\[, thisArg] )
+
+Returns the index of the first element in an array for which a predicate function returns a truthy value.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var v = arr.findIndex( predicate );
+// returns 0
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v ) {
+    this.count += 1;
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( false, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var z = arr.findIndex( predicate, context );
+// returns 2
 
 var count = context.count;
 // returns 3
@@ -455,7 +501,7 @@ The `predicate` function is provided three arguments:
 To set the function execution context, provide a `thisArg`.
 
 ```javascript
-function predicate( v, i ) {
+function predicate( v ) {
     this.count += 1;
     return ( v === true );
 }
@@ -472,6 +518,58 @@ arr.set( false, 2 );
 
 var z = arr.findLast( predicate, context );
 // returns true
+
+var count = context.count;
+// returns 3
+```
+
+<a name="method-find-last-index"></a>
+
+#### BooleanArray.prototype.findLastIndex( predicate\[, thisArg] )
+
+Returns the index of the last element in an array for which a predicate function returns a truthy value.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var v = arr.findLastIndex( predicate );
+// returns 2
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v ) {
+    this.count += 1;
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( false, 2 );
+
+var z = arr.findLastIndex( predicate, context );
+// returns 0
 
 var count = context.count;
 // returns 3
@@ -704,15 +802,10 @@ The function should return a number where:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Uint8Array = require( '@stdlib/array-uint8' );
+var logEach = require( '@stdlib/console-log-each' );
+var BooleanArray = require( '@stdlib/array-bool' );
 
 // Create a boolean array by specifying a length:
 var out = new BooleanArray( 3 );
@@ -734,11 +827,6 @@ out = new BooleanArray( arr.buffer, 1, 2 );
 logEach( '%s', out );
 
 console.log( '%s', false );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -833,9 +921,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-bool/main/LICENSE
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/umd
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/umd
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
 </section>
 
