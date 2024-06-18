@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-16)
+## Unreleased (2024-06-18)
 
 <section class="features">
 
 ### Features
 
+-   [`de50d0a`](https://github.com/stdlib-js/stdlib/commit/de50d0af5f4b9a466a87be81da737fdbed48dbf3) - add `reverse` and `toReversed` methods to `array/bool` [(#2390)](https://github.com/stdlib-js/stdlib/pull/2390)
 -   [`5cd4a70`](https://github.com/stdlib-js/stdlib/commit/5cd4a70beaa7663d2a822b0922b3fb3cc6ec539f) - add `findIndex` and `findLastIndex` methods to `array/bool` [(#2384)](https://github.com/stdlib-js/stdlib/pull/2384)
 -   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376)
 -   [`d71d044`](https://github.com/stdlib-js/stdlib/commit/d71d04433120ab3096fb01c546d96c60c7684681) - add `sort` method to `array/bool` [(#2363)](https://github.com/stdlib-js/stdlib/pull/2363)
@@ -27,6 +28,7 @@
 
 <details>
 
+-   [`de50d0a`](https://github.com/stdlib-js/stdlib/commit/de50d0af5f4b9a466a87be81da737fdbed48dbf3) - **feat:** add `reverse` and `toReversed` methods to `array/bool` [(#2390)](https://github.com/stdlib-js/stdlib/pull/2390) _(by Jaysukh Makvana, Athan Reines)_
 -   [`a59c8bf`](https://github.com/stdlib-js/stdlib/commit/a59c8bfbfed0a5fad9a46625cfca6b869b03515e) - **docs:** add `repl.txt` to `array/bool` [(#2385)](https://github.com/stdlib-js/stdlib/pull/2385) _(by Jaysukh Makvana, Athan Reines)_
 -   [`5cd4a70`](https://github.com/stdlib-js/stdlib/commit/5cd4a70beaa7663d2a822b0922b3fb3cc6ec539f) - **feat:** add `findIndex` and `findLastIndex` methods to `array/bool` [(#2384)](https://github.com/stdlib-js/stdlib/pull/2384) _(by Jaysukh Makvana, Athan Reines)_
 -   [`cba0d92`](https://github.com/stdlib-js/stdlib/commit/cba0d9249a25664a0b52f3ea2fe65eeddedd1e59) - **feat:** add `find` and `findLast` methods to `array/bool` [(#2376)](https://github.com/stdlib-js/stdlib/pull/2376) _(by Jaysukh Makvana)_

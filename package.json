@@ -47,6 +47,7 @@
     "@stdlib/assert-is-nonnegative-integer": "^0.2.1",
     "@stdlib/assert-is-object": "^0.2.1",
     "@stdlib/boolean-ctor": "^0.2.1",
+    "@stdlib/math-base-special-floor": "^0.2.2",
     "@stdlib/string-format": "^0.2.1",
     "@stdlib/symbol-iterator": "^0.2.1",
     "@stdlib/types": "^0.3.2",
