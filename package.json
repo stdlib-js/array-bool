@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-bool",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "BooleanArray.",
   "license": "Apache-2.0",
   "author": {
