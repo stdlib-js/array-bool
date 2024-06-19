@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-bool/tags). For example,
+
+```javascript
 import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@v0.0.1-deno/mod.js';
 ```
 
@@ -839,7 +844,7 @@ v = out.get( 2 );
 ```javascript
 import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@deno/mod.js';
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
-import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@v0.0.1-deno/mod.js';
+import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@deno/mod.js';
 
 // Create a boolean array by specifying a length:
 var out = new BooleanArray( 3 );
