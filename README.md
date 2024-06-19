@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
+import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@v0.0.1-esm/index.mjs';
 ```
 
 <a name="constructor"></a>
@@ -844,7 +844,7 @@ v = out.get( 2 );
 
 import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
+import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@v0.0.1-esm/index.mjs';
 
 // Create a boolean array by specifying a length:
 var out = new BooleanArray( 3 );
