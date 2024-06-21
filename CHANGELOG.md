@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-20)
+## Unreleased (2024-06-21)
 
 <section class="features">
 
 ### Features
 
+-   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421)
 -   [`0b3db04`](https://github.com/stdlib-js/stdlib/commit/0b3db0401bd16df7aeccb500d8280c280a394762) - add `toSorted` method to `array/bool` [(#2413)](https://github.com/stdlib-js/stdlib/pull/2413)
 
 </section>
@@ -22,6 +23,7 @@
 
 <details>
 
+-   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - **feat:** add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421) _(by Jaysukh Makvana, Athan Reines)_
 -   [`0b3db04`](https://github.com/stdlib-js/stdlib/commit/0b3db0401bd16df7aeccb500d8280c280a394762) - **feat:** add `toSorted` method to `array/bool` [(#2413)](https://github.com/stdlib-js/stdlib/pull/2413) _(by Jaysukh Makvana)_
 
 </details>
@@ -34,8 +36,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Jaysukh Makvana
 
 </section>
