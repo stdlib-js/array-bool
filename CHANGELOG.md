@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-23)
+## Unreleased (2024-06-29)
 
 <section class="features">
 
 ### Features
 
+-   [`29615af`](https://github.com/stdlib-js/stdlib/commit/29615af970796a43f65f4b00d29bd23a122f2208) - add `slice` and `subarray` methods to `array/bool` [(#2472)](https://github.com/stdlib-js/stdlib/pull/2472)
 -   [`fbc42b4`](https://github.com/stdlib-js/stdlib/commit/fbc42b4c66cf695c6c114f64bf3eff65186026f0) - add `includes` method to `array/bool` [(#2441)](https://github.com/stdlib-js/stdlib/pull/2441)
 -   [`c58e9e4`](https://github.com/stdlib-js/stdlib/commit/c58e9e4dce4361b4ae7454eca926b0e00afb15aa) - add `indexOf` and `lastIndexOf` methods to `array/bool` [(#2432)](https://github.com/stdlib-js/stdlib/pull/2432)
 -   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421)
@@ -25,6 +26,7 @@
 
 <details>
 
+-   [`29615af`](https://github.com/stdlib-js/stdlib/commit/29615af970796a43f65f4b00d29bd23a122f2208) - **feat:** add `slice` and `subarray` methods to `array/bool` [(#2472)](https://github.com/stdlib-js/stdlib/pull/2472) _(by Jaysukh Makvana, Athan Reines)_
 -   [`fbc42b4`](https://github.com/stdlib-js/stdlib/commit/fbc42b4c66cf695c6c114f64bf3eff65186026f0) - **feat:** add `includes` method to `array/bool` [(#2441)](https://github.com/stdlib-js/stdlib/pull/2441) _(by Jaysukh Makvana)_
 -   [`c58e9e4`](https://github.com/stdlib-js/stdlib/commit/c58e9e4dce4361b4ae7454eca926b0e00afb15aa) - **feat:** add `indexOf` and `lastIndexOf` methods to `array/bool` [(#2432)](https://github.com/stdlib-js/stdlib/pull/2432) _(by Jaysukh Makvana, Athan Reines)_
 -   [`42c67e7`](https://github.com/stdlib-js/stdlib/commit/42c67e76cdf919e4e43ff9333d9acc6177eb5558) - **feat:** add `every` and `some` methods to `array/bool` [(#2421)](https://github.com/stdlib-js/stdlib/pull/2421) _(by Jaysukh Makvana, Athan Reines)_
