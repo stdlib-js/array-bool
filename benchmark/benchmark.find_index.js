@@ -23,7 +23,7 @@
 var bench = require( '@stdlib/bench-harness' );
 var isInteger = require( '@stdlib/assert-is-integer' ).isPrimitive;
 var pkg = require( './../package.json' ).name;
-var BooleanArray = require('./../lib');
+var BooleanArray = require( './../lib' );
 
 
 // MAIN //

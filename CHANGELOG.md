@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-05)
+## Unreleased (2024-07-07)
 
 <section class="features">
 
@@ -27,6 +27,7 @@
 
 <details>
 
+-   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`4a6be43`](https://github.com/stdlib-js/stdlib/commit/4a6be430830868fb181bfa0b8923f37dabaffe8a) - **feat:** add `reduce` and `reduceRight` methods to `array/bool` [(#2509)](https://github.com/stdlib-js/stdlib/pull/2509) _(by Jaysukh Makvana, Athan Reines)_
 -   [`29615af`](https://github.com/stdlib-js/stdlib/commit/29615af970796a43f65f4b00d29bd23a122f2208) - **feat:** add `slice` and `subarray` methods to `array/bool` [(#2472)](https://github.com/stdlib-js/stdlib/pull/2472) _(by Jaysukh Makvana, Athan Reines)_
 -   [`fbc42b4`](https://github.com/stdlib-js/stdlib/commit/fbc42b4c66cf695c6c114f64bf3eff65186026f0) - **feat:** add `includes` method to `array/bool` [(#2441)](https://github.com/stdlib-js/stdlib/pull/2441) _(by Jaysukh Makvana)_
@@ -44,10 +45,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Jaysukh Makvana
+-   Philipp Burckhardt
 
 </section>
 
