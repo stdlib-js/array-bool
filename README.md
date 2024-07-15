@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-bool
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-BooleanArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var BooleanArray = require( 'path/to/vendor/umd/array-bool/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.BooleanArray;
-})();
-</script>
+var BooleanArray = require( '@stdlib/array-bool' );
 ```
 
 <a name="constructor"></a>
@@ -373,6 +367,38 @@ var len = arr.length;
 // returns 4
 ```
 
+<a name="method-at"></a>
+
+#### BooleanArray.prototype.at( i )
+
+Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer positions.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var v = arr.at( 0 );
+// returns true
+
+v = arr.at( -1 );
+// returns true
+```
+
+If provided an out-of-bounds index, the method returns `undefined`.
+
+```javascript
+var arr = new BooleanArray( 10 );
+
+var v = arr.at( 100 );
+// returns undefined
+
+v = arr.at( -100 );
+// returns undefined
+```
+
 <a name="method-every"></a>
 
 #### BooleanArray.prototype.every( predicate\[, thisArg] )
@@ -420,6 +446,126 @@ arr.set( true, 2 );
 
 var bool = arr.every( predicate, context );
 // returns true
+
+var count = context.count;
+// returns 3
+```
+
+<a name="method-fill"></a>
+
+#### BooleanArray.prototype.fill( value\[, start\[, end]] )
+
+Returns a modified typed array filled with a fill value.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+// Set all elements to the same value:
+arr.fill( true );
+
+var v = arr.get( 0 );
+// returns true
+
+v = arr.get( 1 );
+// returns true
+
+v = arr.get( 2 );
+// returns true
+
+// Fill all elements starting from the second element:
+arr.fill( false, 1 );
+
+v = arr.get( 1 );
+// returns false
+
+v = arr.get( 2 );
+// returns false
+
+// Fill all elements from first element until the second-to-last element:
+arr.fill( false, 0, 2 );
+
+v = arr.get( 0 );
+// returns false
+
+v = arr.get( 1 );
+// returns false
+```
+
+When a `start` and/or `end` index is negative, the respective index is determined relative to the last array element.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+// Set all array elements, except the last element, to the same value:
+arr.fill( true, 0, -1 );
+
+var v = arr.get( 0 );
+// returns true
+
+v = arr.get( 2 );
+// returns false
+```
+
+<a name="method-filter"></a>
+
+#### BooleanArray.prototype.filter( predicate\[, thisArg] )
+
+Returns a new array containing the elements of an array which pass a test implemented by a predicate function.
+
+```javascript
+function predicate( v ) {
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+// Set the first three elements:
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var out = arr.filter( predicate );
+// returns <BooleanArray>
+
+var len = out.length;
+// returns 2
+
+var v = out.get( 0 );
+// returns true
+
+v = out.get( 1 );
+// return true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v, i ) {
+    this.count += 1;
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var out = arr.filter( predicate, context );
+// returns <BooleanArray>
+
+var len = out.length;
+// returns 2
 
 var count = context.count;
 // returns 3
@@ -1236,8 +1382,6 @@ The function should return a number where:
 -   a positive value indicates that `a` should come after `b`.
 -   zero or `NaN` indicates that `a` and `b` are considered equal.
 
-<a name="method-to-reversed"></a>
-
 <a name="method-subarray"></a>
 
 #### BooleanArray.prototype.subarray( \[begin\[, end]] )
@@ -1313,6 +1457,30 @@ var bool = subarr.get( 0 );
 bool = subarr.get( len-1 );
 // returns true
 ```
+
+<a name="method-to-locale-string"></a>
+
+#### BooleanArray.prototype.toLocaleString( \[locales\[, options]] )
+
+Serializes an array as a locale-specific string.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var str = arr.toLocaleString();
+// returns 'true,false,true'
+```
+
+The method supports the following arguments:
+
+-   **locales**: a string with a BCP 47 language tag or an array of such strings.
+-   **options**: configuration properties.
+
+<a name="method-to-reversed"></a>
 
 #### BooleanArray.prototype.toReversed()
 
@@ -1485,15 +1653,10 @@ var v = out.get( 0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Uint8Array = require( '@stdlib/array-uint8' );
+var logEach = require( '@stdlib/console-log-each' );
+var BooleanArray = require( '@stdlib/array-bool' );
 
 // Create a boolean array by specifying a length:
 var out = new BooleanArray( 3 );
@@ -1515,11 +1678,6 @@ out = new BooleanArray( arr.buffer, 1, 2 );
 logEach( '%s', out );
 
 console.log( '%s', false );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -1616,9 +1774,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/umd
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/umd
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
 </section>
 
