@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-13)
+## Unreleased (2024-07-15)
 
 <section class="features">
 
 ### Features
 
+-   [`7c17308`](https://github.com/stdlib-js/stdlib/commit/7c17308587cd0fbac9812f258e3cd774cbdfc8da) - add `at`, `fill`, `filter`, and `toLocalestring` methods to `array/bool` [(#2607)](https://github.com/stdlib-js/stdlib/pull/2607)
 -   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590)
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557)
 -   [`4a6be43`](https://github.com/stdlib-js/stdlib/commit/4a6be430830868fb181bfa0b8923f37dabaffe8a) - add `reduce` and `reduceRight` methods to `array/bool` [(#2509)](https://github.com/stdlib-js/stdlib/pull/2509)
@@ -29,6 +30,7 @@
 
 <details>
 
+-   [`7c17308`](https://github.com/stdlib-js/stdlib/commit/7c17308587cd0fbac9812f258e3cd774cbdfc8da) - **feat:** add `at`, `fill`, `filter`, and `toLocalestring` methods to `array/bool` [(#2607)](https://github.com/stdlib-js/stdlib/pull/2607) _(by Jaysukh Makvana, Athan Reines)_
 -   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - **feat:** add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590) _(by Jaysukh Makvana)_
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - **feat:** add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557) _(by Jaysukh Makvana, Athan Reines)_
 -   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
