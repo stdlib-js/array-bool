@@ -64,6 +64,7 @@
     "@stdlib/array-float32": "^0.2.1",
     "@stdlib/assert-has-own-property": "^0.2.1",
     "@stdlib/assert-instance-of": "^0.2.1",
+    "@stdlib/assert-is-array": "^0.2.1",
     "@stdlib/assert-is-booleanarray": "^0.0.1",
     "@stdlib/assert-is-iterator-like": "^0.2.1",
     "@stdlib/console-log-each": "^0.2.1",

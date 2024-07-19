@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-15)
+## Unreleased (2024-07-19)
 
 <section class="features">
 
 ### Features
 
+-   [`cb20ecc`](https://github.com/stdlib-js/stdlib/commit/cb20ecc5555cabbdfa9ad4807e096f8768f9f780) - add `copyWithin`, `entries`, `forEach` to `array/bool` [(#2611)](https://github.com/stdlib-js/stdlib/pull/2611)
 -   [`7c17308`](https://github.com/stdlib-js/stdlib/commit/7c17308587cd0fbac9812f258e3cd774cbdfc8da) - add `at`, `fill`, `filter`, and `toLocalestring` methods to `array/bool` [(#2607)](https://github.com/stdlib-js/stdlib/pull/2607)
 -   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590)
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557)
@@ -30,6 +31,7 @@
 
 <details>
 
+-   [`cb20ecc`](https://github.com/stdlib-js/stdlib/commit/cb20ecc5555cabbdfa9ad4807e096f8768f9f780) - **feat:** add `copyWithin`, `entries`, `forEach` to `array/bool` [(#2611)](https://github.com/stdlib-js/stdlib/pull/2611) _(by Jaysukh Makvana, Athan Reines)_
 -   [`7c17308`](https://github.com/stdlib-js/stdlib/commit/7c17308587cd0fbac9812f258e3cd774cbdfc8da) - **feat:** add `at`, `fill`, `filter`, and `toLocalestring` methods to `array/bool` [(#2607)](https://github.com/stdlib-js/stdlib/pull/2607) _(by Jaysukh Makvana, Athan Reines)_
 -   [`ce3ad9a`](https://github.com/stdlib-js/stdlib/commit/ce3ad9a98468829b294708ca188ec669056e58ed) - **feat:** add `keys`, `values`, and `with` methods to `array/bool` [(#2590)](https://github.com/stdlib-js/stdlib/pull/2590) _(by Jaysukh Makvana)_
 -   [`5a66b4b`](https://github.com/stdlib-js/stdlib/commit/5a66b4bb677cdbc4706811ea9f776343297c9f87) - **feat:** add `join` and `toString` methods to `array/bool` [(#2557)](https://github.com/stdlib-js/stdlib/pull/2557) _(by Jaysukh Makvana, Athan Reines)_
