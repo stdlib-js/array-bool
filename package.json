@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-base-accessor-getter": "^0.2.1",
+    "@stdlib/array-base-accessor-getter": "^0.2.2",
     "@stdlib/array-base-getter": "^0.2.2",
     "@stdlib/array-uint8": "^0.2.2",
     "@stdlib/assert-has-iterator-symbol-support": "^0.2.2",
@@ -65,9 +65,9 @@
     "@stdlib/assert-has-own-property": "^0.2.2",
     "@stdlib/assert-instance-of": "^0.2.2",
     "@stdlib/assert-is-array": "^0.2.2",
-    "@stdlib/assert-is-booleanarray": "^0.0.1",
+    "@stdlib/assert-is-booleanarray": "^0.0.2",
     "@stdlib/assert-is-iterator-like": "^0.2.2",
-    "@stdlib/console-log-each": "^0.2.1",
+    "@stdlib/console-log-each": "^0.2.2",
     "@stdlib/math-base-special-pow": "^0.3.0",
     "@stdlib/random-base-randu": "^0.2.1",
     "@stdlib/strided-base-reinterpret-boolean": "^0.0.2",
