@@ -902,7 +902,7 @@ Invokes a function once for each array element.
 
 ```javascript
 function log( v, i ) {
-    console.log( '%s: %s', i, v.toString() );
+    console.log( '%s: %s', i.toString(), v.toString() );
 }
 
 var arr = new BooleanArray( 3 );
@@ -930,7 +930,7 @@ To set the function execution context, provide a `thisArg`.
 ```javascript
 function fcn( v, i ) {
     this.count += 1;
-    console.log( '%s: %s', i, v.toString() );
+    console.log( '%s: %s', i.toString(), v.toString() );
 }
 
 var arr = new BooleanArray( 3 );
@@ -944,11 +944,6 @@ arr.set( false, 1 );
 arr.set( true, 2 );
 
 arr.forEach( fcn, context );
-/* =>
-    0: 1 + 1i
-    1: 2 + 2i
-    2: 3 + 3i
-*/
 
 var count = context.count;
 // returns 3
