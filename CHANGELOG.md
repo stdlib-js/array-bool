@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-18)
+## Unreleased (2024-11-21)
 
 <section class="bug-fixes">
 
 ### Bug Fixes
 
+-   [`8ab90cd`](https://github.com/stdlib-js/stdlib/commit/8ab90cd2db15841619b27a50915086e072d8bed3) - resolve TypeScript lint error
 -   [`583452c`](https://github.com/stdlib-js/stdlib/commit/583452c820523f4bc97b293b4424d0c1bf59fffc) - add missing property
 
 </section>
@@ -22,6 +23,7 @@
 
 <details>
 
+-   [`8ab90cd`](https://github.com/stdlib-js/stdlib/commit/8ab90cd2db15841619b27a50915086e072d8bed3) - **fix:** resolve TypeScript lint error _(by Athan Reines)_
 -   [`de1ef8b`](https://github.com/stdlib-js/stdlib/commit/de1ef8ba5e2d7dd1363bdf826572456f49b7895c) - **docs:** fix example _(by Athan Reines)_
 -   [`8f72b43`](https://github.com/stdlib-js/stdlib/commit/8f72b432c0fc81a78641d5689722ecc9671c6f02) - **style:** add missing spaces around parentheses _(by Philipp Burckhardt)_
 -   [`6feb08f`](https://github.com/stdlib-js/stdlib/commit/6feb08f927a08bc7fbb29a721e04218cbd618200) - **style:** fix missing space _(by Athan Reines)_
