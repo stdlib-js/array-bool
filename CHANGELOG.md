@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-19)
+## Unreleased (2025-09-01)
 
 <section class="bug-fixes">
 
@@ -23,6 +23,8 @@
 
 <details>
 
+-   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`1c56b73`](https://github.com/stdlib-js/stdlib/commit/1c56b737ec018cc818cebf19e5c7947fa684e126) - **docs:** update related packages sections [(#3380)](https://github.com/stdlib-js/stdlib/pull/3380) _(by stdlib-bot)_
 -   [`8ab90cd`](https://github.com/stdlib-js/stdlib/commit/8ab90cd2db15841619b27a50915086e072d8bed3) - **fix:** resolve TypeScript lint error _(by Athan Reines)_
 -   [`de1ef8b`](https://github.com/stdlib-js/stdlib/commit/de1ef8ba5e2d7dd1363bdf826572456f49b7895c) - **docs:** fix example _(by Athan Reines)_
