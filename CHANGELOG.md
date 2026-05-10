@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-09)
+## Unreleased (2026-05-10)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`24634ce`](https://github.com/stdlib-js/stdlib/commit/24634ceba68fe9e1f0ebf700a9a8b0fdc0c2902b) - **test:** fix `Uint8Array` import in `array/bool` [(#12063)](https://github.com/stdlib-js/stdlib/pull/12063) _(by Karan Anand)_
 -   [`3b764ec`](https://github.com/stdlib-js/stdlib/commit/3b764ec4b17ebce14902ac68a42bc5df62c3aef5) - **docs:** remove stray console.log _(by Athan Reines)_
 -   [`f101dfa`](https://github.com/stdlib-js/stdlib/commit/f101dfa3d4cdd280ab58690114862ab15e8993ef) - **style:** fix line wrapping and remove trailing whitespace _(by Athan Reines)_
 -   [`e2b91ec`](https://github.com/stdlib-js/stdlib/commit/e2b91ec8f083aa6724029bd2f3d180d07230cf9e) - **bench:** refactor to use string interpolation in `array/bool` [(#10370)](https://github.com/stdlib-js/stdlib/pull/10370) _(by Shubham, Athan Reines)_
@@ -26,9 +27,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Karan Anand
 -   Shubham
 
 </section>
