@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-05)
+## Unreleased (2026-08-06)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`1935a5f`](https://github.com/stdlib-js/stdlib/commit/1935a5f7306c6e1f01f3880f4374dfeadf52f371) - **chore:** clean-up [(#13951)](https://github.com/stdlib-js/stdlib/pull/13951) _(by Philipp Burckhardt)_
 -   [`cf6c136`](https://github.com/stdlib-js/stdlib/commit/cf6c136826ef37b3802b5b045c5ce2ae40726f82) - **test:** update import _(by Athan Reines)_
 -   [`3901886`](https://github.com/stdlib-js/stdlib/commit/3901886ff5ff6bdbcfd65ea52109fee0b0e1ff03) - **docs:** fix examples and descriptions in top-level `array` declarations [(#12375)](https://github.com/stdlib-js/stdlib/pull/12375) _(by Philipp Burckhardt, Athan Reines)_
 -   [`24634ce`](https://github.com/stdlib-js/stdlib/commit/24634ceba68fe9e1f0ebf700a9a8b0fdc0c2902b) - **test:** fix `Uint8Array` import in `array/bool` [(#12063)](https://github.com/stdlib-js/stdlib/pull/12063) _(by Karan Anand)_
