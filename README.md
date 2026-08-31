@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-bool
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
+var BooleanArray = require( '@stdlib/array-bool' );
 ```
 
 <a name="constructor"></a>
@@ -98,7 +116,7 @@ var len = arr2.length;
 Creates a boolean array from a [typed array][@stdlib/array/typed].
 
 ```javascript
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+var Uint8Array = require( '@stdlib/array-uint8' );
 
 var buf = new Uint8Array( [ 1, 0, 0, 1 ] );
 // returns <Uint8Array>[ 1, 0, 0, 1 ]
@@ -134,7 +152,7 @@ len = arr2.length;
 Returns a boolean array view of an [`ArrayBuffer`][@stdlib/array/buffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 var buf = new ArrayBuffer( 240 );
 
 var arr1 = new BooleanArray( buf );
@@ -217,7 +235,7 @@ var nbytes = arr.byteLength;
 Offset (in bytes) of the array from the start of its underlying `ArrayBuffer`.
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 
 var arr = new BooleanArray( 10 );
 // returns <BooleanArray>
@@ -1805,15 +1823,10 @@ var v = out.get( 0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
-import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
+```javascript
+var Uint8Array = require( '@stdlib/array-uint8' );
+var logEach = require( '@stdlib/console-log-each' );
+var BooleanArray = require( '@stdlib/array-bool' );
 
 // Create a boolean array by specifying a length:
 var out = new BooleanArray( 3 );
@@ -1833,10 +1846,6 @@ logEach( '%s', out );
 arr = new Uint8Array( [ 1, 0, 1, 1, 0, 1 ] );
 out = new BooleanArray( arr.buffer, 1, 2 );
 logEach( '%s', out );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -1860,6 +1869,20 @@ logEach( '%s', out );
 ## See Also
 
 -   <span class="package-name">[`@stdlib/array-buffer`][@stdlib/array/buffer]</span><span class="delimiter">: </span><span class="description">ArrayBuffer.</span>
+-   <span class="package-name">[`@stdlib/array-float64`][@stdlib/array/float64]</span><span class="delimiter">: </span><span class="description">Float64Array.</span>
+-   <span class="package-name">[`@stdlib/array-float32`][@stdlib/array/float32]</span><span class="delimiter">: </span><span class="description">Float32Array.</span>
+-   <span class="package-name">[`@stdlib/array-float16`][@stdlib/array/float16]</span><span class="delimiter">: </span><span class="description">Float16Array.</span>
+-   <span class="package-name">[`@stdlib/array-int16`][@stdlib/array/int16]</span><span class="delimiter">: </span><span class="description">Int16Array.</span>
+-   <span class="package-name">[`@stdlib/array-int32`][@stdlib/array/int32]</span><span class="delimiter">: </span><span class="description">Int32Array.</span>
+-   <span class="package-name">[`@stdlib/array-int64`][@stdlib/array/int64]</span><span class="delimiter">: </span><span class="description">Int64Array.</span>
+-   <span class="package-name">[`@stdlib/array-int8`][@stdlib/array/int8]</span><span class="delimiter">: </span><span class="description">Int8Array.</span>
+-   <span class="package-name">[`@stdlib/array-uint8`][@stdlib/array/uint8]</span><span class="delimiter">: </span><span class="description">Uint8Array.</span>
+-   <span class="package-name">[`@stdlib/array-uint16`][@stdlib/array/uint16]</span><span class="delimiter">: </span><span class="description">Uint16Array.</span>
+-   <span class="package-name">[`@stdlib/array-uint32`][@stdlib/array/uint32]</span><span class="delimiter">: </span><span class="description">Uint32Array.</span>
+-   <span class="package-name">[`@stdlib/array-uint64`][@stdlib/array/uint64]</span><span class="delimiter">: </span><span class="description">Uint64Array.</span>
+-   <span class="package-name">[`@stdlib/array-uint8c`][@stdlib/array/uint8c]</span><span class="delimiter">: </span><span class="description">Uint8ClampedArray.</span>
+-   <span class="package-name">[`@stdlib/array-complex128`][@stdlib/array/complex128]</span><span class="delimiter">: </span><span class="description">Complex128Array.</span>
+-   <span class="package-name">[`@stdlib/array-complex64`][@stdlib/array/complex64]</span><span class="delimiter">: </span><span class="description">Complex64Array.</span>
 
 </section>
 
@@ -1874,7 +1897,7 @@ logEach( '%s', out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -1939,9 +1962,41 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/esm
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/esm
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
+
+<!-- <related-links> -->
+
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
+
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
+
+[@stdlib/array/float16]: https://github.com/stdlib-js/array-float16
+
+[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16
+
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
+
+[@stdlib/array/int64]: https://github.com/stdlib-js/array-int64
+
+[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8
+
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8
+
+[@stdlib/array/uint16]: https://github.com/stdlib-js/array-uint16
+
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+
+[@stdlib/array/uint64]: https://github.com/stdlib-js/array-uint64
+
+[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c
+
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
+
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
+
+<!-- </related-links> -->
 
 </section>
 
