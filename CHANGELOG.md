@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-24)
+## Unreleased (2026-10-24)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`57405d9`](https://github.com/stdlib-js/stdlib/commit/57405d982378b2ead89e16dc4861054b04e61c5b) - address incorrect argument interpolation [(#16243)](https://github.com/stdlib-js/stdlib/pull/16243)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`57405d9`](https://github.com/stdlib-js/stdlib/commit/57405d982378b2ead89e16dc4861054b04e61c5b) - **fix:** address incorrect argument interpolation [(#16243)](https://github.com/stdlib-js/stdlib/pull/16243) _(by Philipp Burckhardt)_
 -   [`768c964`](https://github.com/stdlib-js/stdlib/commit/768c96486fa432d831248d04e342bce1dfc52820) - **docs:** update related packages sections [(#14834)](https://github.com/stdlib-js/stdlib/pull/14834) _(by stdlib-bot)_
 -   [`e805b48`](https://github.com/stdlib-js/stdlib/commit/e805b48af03299edd06969a72e9bf03ccb344aa5) - **bench:** fix assignment operation _(by Athan Reines)_
 -   [`1935a5f`](https://github.com/stdlib-js/stdlib/commit/1935a5f7306c6e1f01f3880f4374dfeadf52f371) - **chore:** clean-up [(#13951)](https://github.com/stdlib-js/stdlib/pull/13951) _(by Philipp Burckhardt)_
