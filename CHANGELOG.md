@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-24)
+## Unreleased (2026-11-03)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`57405d9`](https://github.com/stdlib-js/stdlib/commit/57405d982378b2ead89e16dc4861054b04e61c5b) - **fix:** address incorrect argument interpolation [(#16243)](https://github.com/stdlib-js/stdlib/pull/16243) _(by Philipp Burckhardt)_
 -   [`768c964`](https://github.com/stdlib-js/stdlib/commit/768c96486fa432d831248d04e342bce1dfc52820) - **docs:** update related packages sections [(#14834)](https://github.com/stdlib-js/stdlib/pull/14834) _(by stdlib-bot)_
 -   [`e805b48`](https://github.com/stdlib-js/stdlib/commit/e805b48af03299edd06969a72e9bf03ccb344aa5) - **bench:** fix assignment operation _(by Athan Reines)_
